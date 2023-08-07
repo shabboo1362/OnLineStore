@@ -1,0 +1,243 @@
+﻿This report shows the steps taken to convert your Web application from ASP.NET 1.1 to ASP.NET 2.0. 
+There may be some unresolved conversion issues you will need to manually fix. 
+For more information, please refer to http://go.microsoft.com/fwlink/?LinkId=46995 or search for the help topic "Converting from Visual Studio .NET 2002 or 2003".
+Conversion Started on project file OnLineStore.csproj at March 06 2007, 13:24:18.
+
+=========================ERRORS===================
+
+=========================WARNINGS=================
+Warning: This web project was converted as a file-based web application. If your site contained any IIS meta-information, e.g. sub-folders marked as virtual directories, it is recommended that you close this web site and re-open it using the Open Web Site command and selecting the Local IIS tab.
+
+=========================COMMENTS=================
+Web.Config: Added 'xhtmlConformance' attribute.
+Removed attribute AutoEventWireup from file addtobasket.aspx.
+Removed attribute Codebehind from file addtobasket.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file addtobasket.aspx.cs (Line 23).
+Removed attribute AutoEventWireup from file basket.aspx.
+Removed attribute Codebehind from file basket.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file basket.aspx.cs (Line 22).
+Warning: Access level of 'productcmd_Click' changed to 'protected' in file basket.aspx.cs (Line 82).
+Warning: Access level of 'editbasketcmd_Click' changed to 'protected' in file basket.aspx.cs (Line 87).
+Warning: Access level of 'Button1_Click' changed to 'protected' in file basket.aspx.cs (Line 145).
+Warning: Access level of 'signoutlink_Click' changed to 'protected' in file basket.aspx.cs (Line 151).
+Warning: Access level of 'cancelcmd_Click' changed to 'protected' in file basket.aspx.cs (Line 157).
+Removed attribute AutoEventWireup from file error.aspx.
+Removed attribute Codebehind from file error.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file error.aspx.cs (Line 20).
+Removed attribute AutoEventWireup from file forgotpassword.aspx.
+Removed attribute Codebehind from file forgotpassword.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file forgotpassword.aspx.cs (Line 23).
+Removed attribute AutoEventWireup from file forgotpassword1.aspx.
+Removed attribute Codebehind from file forgotpassword1.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file forgotpassword1.aspx.cs (Line 23).
+Warning: Access level of 'emailtxt_TextChanged' changed to 'protected' in file forgotpassword1.aspx.cs (Line 49).
+'Reference' tag with reference to '~/error.aspx' added to file forgotpassword1.aspx.
+Removed attribute AutoEventWireup from file forgotpassword2.aspx.
+Removed attribute Codebehind from file forgotpassword2.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file forgotpassword2.aspx.cs (Line 20).
+Removed attribute Codebehind from file Global.asax.
+Removed attribute AutoEventWireup from file index.aspx.
+Removed attribute Codebehind from file index.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file index.aspx.cs (Line 26).
+Removed attribute AutoEventWireup from file product.aspx.
+Removed attribute Codebehind from file product.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file product.aspx.cs (Line 22).
+Warning: Access level of 'cancelcmd_Click' changed to 'protected' in file product.aspx.cs (Line 67).
+Warning: Access level of 'editcmd_Click' changed to 'protected' in file product.aspx.cs (Line 78).
+Removed attribute AutoEventWireup from file productdescription.aspx.
+Removed attribute Codebehind from file productdescription.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file productdescription.aspx.cs (Line 34).
+'Reference' tag with reference to '~/welcome.aspx' added to file productdescription.aspx.
+Warning: Access level of 'signout_Click' changed to 'protected' in file productdescription.aspx.cs (Line 96).
+Removed attribute AutoEventWireup from file register.aspx.
+Removed attribute Codebehind from file register.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file register.aspx.cs (Line 22).
+Warning: Access level of 'submitcmd_Click' changed to 'protected' in file register.aspx.cs (Line 46).
+Warning: Access level of 'cancelcmd_Click' changed to 'protected' in file register.aspx.cs (Line 64).
+Removed attribute AutoEventWireup from file search.aspx.
+Removed attribute Codebehind from file search.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file search.aspx.cs (Line 21).
+'Reference' tag with reference to '~/welcome.aspx' added to file search.aspx.
+Warning: Access level of 'signout_Click' changed to 'protected' in file search.aspx.cs (Line 84).
+Removed attribute AutoEventWireup from file signin.aspx.
+Removed attribute Codebehind from file signin.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file signin.aspx.cs (Line 20).
+Warning: Access level of 'joincmd_Click' changed to 'protected' in file signin.aspx.cs (Line 44).
+Removed attribute AutoEventWireup from file subcategory.aspx.
+Removed attribute Codebehind from file subcategory.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file subcategory.aspx.cs (Line 21).
+Warning: Access level of 'signout_Click' changed to 'protected' in file subcategory.aspx.cs (Line 78).
+Removed attribute AutoEventWireup from file submitorder.aspx.
+Removed attribute Codebehind from file submitorder.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file submitorder.aspx.cs (Line 20).
+Warning: Access level of 'signoutlink_Click' changed to 'protected' in file submitorder.aspx.cs (Line 44).
+Removed attribute AutoEventWireup from file update.aspx.
+Removed attribute Codebehind from file update.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file update.aspx.cs (Line 25).
+Warning: Access level of 'submitcmd_Click' changed to 'protected' in file update.aspx.cs (Line 95).
+'Reference' tag with reference to '~/error.aspx' added to file update.aspx.
+Warning: Access level of 'cancelcmd_Click' changed to 'protected' in file update.aspx.cs (Line 154).
+Warning: Access level of 'signoutlink_Click' changed to 'protected' in file update.aspx.cs (Line 158).
+Removed attribute AutoEventWireup from file WebForm1.aspx.
+Removed attribute Codebehind from file WebForm1.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file WebForm1.aspx.cs (Line 23).
+Warning: Access level of 'DataGrid1_SelectedIndexChanged' changed to 'protected' in file WebForm1.aspx.cs (Line 54).
+Removed attribute AutoEventWireup from file welcome.aspx.
+Removed attribute Codebehind from file welcome.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file welcome.aspx.cs (Line 25).
+Warning: Access level of 'signoutlink_Click' changed to 'protected' in file welcome.aspx.cs (Line 77).
+Removed attribute AutoEventWireup from file admin\addproduct.aspx.
+Removed attribute Codebehind from file admin\addproduct.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file admin\addproduct.aspx.cs (Line 22).
+Warning: Access level of 'addcmd_Click' changed to 'protected' in file admin\addproduct.aspx.cs (Line 52).
+Warning: Access level of 'cancelcmd_Click' changed to 'protected' in file admin\addproduct.aspx.cs (Line 71).
+Warning: Access level of 'sigmoutlink_Click' changed to 'protected' in file admin\addproduct.aspx.cs (Line 76).
+Warning: Access level of 'updatecmd_Click' changed to 'protected' in file admin\addproduct.aspx.cs (Line 82).
+Warning: Access level of 'addproductcmd_Click' changed to 'protected' in file admin\addproduct.aspx.cs (Line 87).
+Warning: Access level of 'homecmd_Click' changed to 'protected' in file admin\addproduct.aspx.cs (Line 92).
+Warning: Access level of 'factorscmd_Click' changed to 'protected' in file admin\addproduct.aspx.cs (Line 97).
+Warning: Access level of 'productcmd_Click' changed to 'protected' in file admin\addproduct.aspx.cs (Line 102).
+Removed attribute AutoEventWireup from file admin\admin.aspx.
+Removed attribute Codebehind from file admin\admin.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file admin\admin.aspx.cs (Line 21).
+Warning: Access level of 'customerlink_Click' changed to 'protected' in file admin\admin.aspx.cs (Line 49).
+Warning: Access level of 'sellproductlink_Click' changed to 'protected' in file admin\admin.aspx.cs (Line 63).
+Warning: Access level of 'sigmoutlink_Click' changed to 'protected' in file admin\admin.aspx.cs (Line 78).
+Warning: Access level of 'updatecmd_Click' changed to 'protected' in file admin\admin.aspx.cs (Line 84).
+Warning: Access level of 'addproductcmd_Click' changed to 'protected' in file admin\admin.aspx.cs (Line 89).
+Warning: Access level of 'requestcmd_Click' changed to 'protected' in file admin\admin.aspx.cs (Line 94).
+Warning: Access level of 'productcmd_Click' changed to 'protected' in file admin\admin.aspx.cs (Line 99).
+Removed attribute AutoEventWireup from file admin\factor.aspx.
+Removed attribute Codebehind from file admin\factor.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file admin\factor.aspx.cs (Line 24).
+Warning: Access level of 'Button1_Click' changed to 'protected' in file admin\factor.aspx.cs (Line 69).
+Warning: Access level of 'deletecmd_Click' changed to 'protected' in file admin\factor.aspx.cs (Line 99).
+Warning: Access level of 'requestcmd_Click' changed to 'protected' in file admin\factor.aspx.cs (Line 129).
+Warning: Access level of 'addproductcmd_Click' changed to 'protected' in file admin\factor.aspx.cs (Line 134).
+Warning: Access level of 'homecmd_Click' changed to 'protected' in file admin\factor.aspx.cs (Line 139).
+Warning: Access level of 'updatecmd_Click' changed to 'protected' in file admin\factor.aspx.cs (Line 144).
+Warning: Access level of 'productcmd_Click' changed to 'protected' in file admin\factor.aspx.cs (Line 149).
+Removed attribute AutoEventWireup from file admin\factors.aspx.
+Removed attribute Codebehind from file admin\factors.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file admin\factors.aspx.cs (Line 22).
+Warning: Access level of 'updatecmd_Click' changed to 'protected' in file admin\factors.aspx.cs (Line 50).
+Warning: Access level of 'addproductcmd_Click' changed to 'protected' in file admin\factors.aspx.cs (Line 55).
+Warning: Access level of 'homecmd_Click' changed to 'protected' in file admin\factors.aspx.cs (Line 60).
+Warning: Access level of 'productcmd_Click' changed to 'protected' in file admin\factors.aspx.cs (Line 65).
+Removed attribute AutoEventWireup from file admin\product.aspx.
+Removed attribute Codebehind from file admin\product.aspx.
+'Reference' tag with reference to '~/product.aspx' added to file admin\product.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file admin\product.aspx.cs (Line 22).
+Warning: Access level of 'signoutlink_Click' changed to 'protected' in file admin\product.aspx.cs (Line 55).
+Warning: Access level of 'updatecmd_Click' changed to 'protected' in file admin\product.aspx.cs (Line 61).
+Warning: Access level of 'addproductcmd_Click' changed to 'protected' in file admin\product.aspx.cs (Line 66).
+Warning: Access level of 'homecmd_Click' changed to 'protected' in file admin\product.aspx.cs (Line 71).
+Warning: Access level of 'requestcmd_Click' changed to 'protected' in file admin\product.aspx.cs (Line 76).
+Warning: Access level of 'productcmd_Click' changed to 'protected' in file admin\product.aspx.cs (Line 81).
+Warning: Access level of 'd1_SelectedIndexChanged' changed to 'protected' in file admin\product.aspx.cs (Line 86).
+Removed attribute AutoEventWireup from file admin\report.aspx.
+Removed attribute Codebehind from file admin\report.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file admin\report.aspx.cs (Line 22).
+Warning: Access level of 'signoutlink_Click' changed to 'protected' in file admin\report.aspx.cs (Line 60).
+Warning: Access level of 'updatecmd_Click' changed to 'protected' in file admin\report.aspx.cs (Line 66).
+Warning: Access level of 'addproductcmd_Click' changed to 'protected' in file admin\report.aspx.cs (Line 71).
+Warning: Access level of 'Requestcmd_Click' changed to 'protected' in file admin\report.aspx.cs (Line 76).
+Warning: Access level of 'Button1_Click' changed to 'protected' in file admin\report.aspx.cs (Line 81).
+Warning: Access level of 'productcmd_Click' changed to 'protected' in file admin\report.aspx.cs (Line 86).
+Removed attribute AutoEventWireup from file admin\search.aspx.
+Removed attribute Codebehind from file admin\search.aspx.
+'Reference' tag with reference to '~/search.aspx' added to file admin\search.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file admin\search.aspx.cs (Line 21).
+Warning: Access level of 'updatecmd_Click' changed to 'protected' in file admin\search.aspx.cs (Line 38).
+Warning: Access level of 'addproductcmd_Click' changed to 'protected' in file admin\search.aspx.cs (Line 43).
+Warning: Access level of 'Requestcmd_Click' changed to 'protected' in file admin\search.aspx.cs (Line 48).
+Warning: Access level of 'Button1_Click' changed to 'protected' in file admin\search.aspx.cs (Line 53).
+Warning: Access level of 'productcmd_Click' changed to 'protected' in file admin\search.aspx.cs (Line 76).
+Removed attribute AutoEventWireup from file admin\update.aspx.
+Removed attribute Codebehind from file admin\update.aspx.
+'Reference' tag with reference to '~/update.aspx' added to file admin\update.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file admin\update.aspx.cs (Line 23).
+Warning: Access level of 'cancelcmd_Click' changed to 'protected' in file admin\update.aspx.cs (Line 74).
+Warning: Access level of 'updatecmd_Click' changed to 'protected' in file admin\update.aspx.cs (Line 79).
+'Reference' tag with reference to '~/error.aspx' added to file admin\update.aspx.
+Warning: Access level of 'Button1_Click' changed to 'protected' in file admin\update.aspx.cs (Line 149).
+Warning: Access level of 'addproductcmd_Click' changed to 'protected' in file admin\update.aspx.cs (Line 154).
+Warning: Access level of 'homecmd_Click' changed to 'protected' in file admin\update.aspx.cs (Line 159).
+Warning: Access level of 'requestcmd_Click' changed to 'protected' in file admin\update.aspx.cs (Line 164).
+Warning: Access level of 'productcmd_Click' changed to 'protected' in file admin\update.aspx.cs (Line 169).
+Removed attribute AutoEventWireup from file admin\updateproduct.aspx.
+Removed attribute Codebehind from file admin\updateproduct.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file admin\updateproduct.aspx.cs (Line 25).
+Warning: Access level of 'update1cmd_Click' changed to 'protected' in file admin\updateproduct.aspx.cs (Line 77).
+Warning: Access level of 'deletecmd_Click' changed to 'protected' in file admin\updateproduct.aspx.cs (Line 99).
+Warning: Access level of 'updatecmd_Click' changed to 'protected' in file admin\updateproduct.aspx.cs (Line 106).
+Warning: Access level of 'addproductcmd_Click' changed to 'protected' in file admin\updateproduct.aspx.cs (Line 111).
+Warning: Access level of 'factorscmd_Click' changed to 'protected' in file admin\updateproduct.aspx.cs (Line 116).
+Warning: Access level of 'homecmd_Click' changed to 'protected' in file admin\updateproduct.aspx.cs (Line 121).
+Warning: Access level of 'productcmd_Click' changed to 'protected' in file admin\updateproduct.aspx.cs (Line 126).
+Removed attribute TargetSchema from file admin\uc\logo.ascx.
+Removed attribute Codebehind from file admin\uc\logo.ascx.
+Removed attribute AutoEventWireup from file admin\uc\logo.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file admin\uc\logo.ascx.cs (Line 16).
+Removed attribute TargetSchema from file admin\uc\mostvisitedbuy.ascx.
+Removed attribute Codebehind from file admin\uc\mostvisitedbuy.ascx.
+Removed attribute AutoEventWireup from file admin\uc\mostvisitedbuy.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file admin\uc\mostvisitedbuy.ascx.cs (Line 22).
+Removed attribute TargetSchema from file admin\uc\search.ascx.
+Removed attribute Codebehind from file admin\uc\search.ascx.
+Removed attribute AutoEventWireup from file admin\uc\search.ascx.
+'Reference' tag with reference to '~/admin/search.aspx' added to file admin\uc\search.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file admin\uc\search.ascx.cs (Line 18).
+Warning: Access level of 'searchcmd_Click' changed to 'protected' in file admin\uc\search.ascx.cs (Line 54).
+Removed attribute TargetSchema from file usercontrol\deliverycondition.ascx.
+Removed attribute Codebehind from file usercontrol\deliverycondition.ascx.
+Removed attribute AutoEventWireup from file usercontrol\deliverycondition.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file usercontrol\DeliveryCondition.ascx.cs (Line 16).
+Removed attribute TargetSchema from file usercontrol\hotproduct.ascx.
+Removed attribute Codebehind from file usercontrol\hotproduct.ascx.
+Removed attribute AutoEventWireup from file usercontrol\hotproduct.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file usercontrol\hotproduct.ascx.cs (Line 16).
+Removed attribute TargetSchema from file usercontrol\hotproducts.ascx.
+Removed attribute Codebehind from file usercontrol\hotproducts.ascx.
+Removed attribute AutoEventWireup from file usercontrol\hotproducts.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file usercontrol\hotproducts.ascx.cs (Line 24).
+Removed attribute TargetSchema from file usercontrol\login.ascx.
+Removed attribute Codebehind from file usercontrol\login.ascx.
+Removed attribute AutoEventWireup from file usercontrol\login.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file usercontrol\login.ascx.cs (Line 27).
+Warning: Access level of 'passwordtxt_TextChanged' changed to 'protected' in file usercontrol\login.ascx.cs (Line 52).
+Warning: Access level of 'usernametxt_TextChanged' changed to 'protected' in file usercontrol\login.ascx.cs (Line 80).
+Removed attribute TargetSchema from file usercontrol\logo.ascx.
+Removed attribute Codebehind from file usercontrol\logo.ascx.
+Removed attribute AutoEventWireup from file usercontrol\logo.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file usercontrol\logo.ascx.cs (Line 16).
+Removed attribute TargetSchema from file usercontrol\mostvisited.ascx.
+Removed attribute Codebehind from file usercontrol\mostvisited.ascx.
+Removed attribute AutoEventWireup from file usercontrol\mostvisited.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file usercontrol\mostvisited.ascx.cs (Line 19).
+Removed attribute TargetSchema from file usercontrol\ourpolicy.ascx.
+Removed attribute Codebehind from file usercontrol\ourpolicy.ascx.
+Removed attribute AutoEventWireup from file usercontrol\ourpolicy.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file usercontrol\OurPolicy.ascx.cs (Line 16).
+Removed attribute TargetSchema from file usercontrol\search.ascx.
+Removed attribute Codebehind from file usercontrol\search.ascx.
+Removed attribute AutoEventWireup from file usercontrol\search.ascx.
+Reference to code-behind class 'usercontrol\search.ascx' has been found in the file 'search.aspx'. A stub class for 'usercontrol\search.ascx' will be generated in 'App_Code\Migrated' folder to avoid circular reference.
+'Reference' tag with reference to '~/search.aspx' added to file usercontrol\search.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file usercontrol\search.ascx.cs (Line 18).
+Warning: Access level of 'searchcmd_Click' changed to 'protected' in file usercontrol\search.ascx.cs (Line 50).
+Added folder App_Code.
+Moved file Global.asax.cs to the App_Code\ directory.
+Reference to code-behind class 'OnLineStore.update' has been found in the file 'codebehind.cs' at line '37'. A stub class for 'OnLineStore.update' will be generated in 'App_Code\Migrated' folder.
+Moved file codebehind.cs to the App_Code\ directory.
+Moved file AssemblyInfo.cs to the App_Code\ directory.
+Updated the attribute 'Inherits' with value 'OnLineStore.Migrated_update' in the file 'update.aspx'.
+Code file 'App_Code\Migrated\Stub_update_aspx_cs.cs' was created and contains an abstract class 'Migrated_update' used as a base class for the class 'OnLineStore.update'.    update.aspx.cs
+Updated the attribute 'Inherits' with value 'OnLineStore.usercontrol.Migrated_search' in the file 'usercontrol\search.ascx'.
+Code file 'App_Code\Migrated\usercontrol\Stub_search_ascx_cs.cs' was created and contains an abstract class 'Migrated_search' used as a base class for the class 'OnLineStore.usercontrol.search'.    usercontrol\search.ascx.cs
+Changed HTML validation schema for all projects to 'Internet Explorer 6.0'.
+Removed file Bin\OnLineStore.dll.
+Removed file Bin\OnLineStore.pdb.
+Removed file OnLineStore.csproj.
+Removed file OnLineStore.csproj.webinfo.
+Project OnLineStore.csproj has been converted successfully at March 06 2007, 13:24:31.
